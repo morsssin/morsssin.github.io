@@ -1,6 +1,5 @@
 let search_tool = document.getElementById("search-tool");
-/* category.style.backgroundColor = "red"; */
-
+const catalog = document.querySelector(".catalog");
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -62,3 +61,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+function createProductCard(product) {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p>${product.price} ₽</p>
+        <button>В корзину</button>
+    `;
+    catalog.appendChild(card);
+}
+
+// Fetch product data from the Python backend
+fetch('http://127.0.0.1:5000/api/get_products')
+    .then((response) => response.json())
+    .then((products) => {
+        // Populate the catalog with product cards
+        products.forEach(createProductCard);
+    })
+    .catch((error) => {
+        console.error('Error fetching product data:', error);
+    });
+
