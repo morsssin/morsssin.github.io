@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('/api/buttons')
+    fetch('http://127.0.0.1:5000/api/buttons')
         .then(response => response.json())
         .then(data => {
             const buttonListContainer = document.getElementById("button-list");
