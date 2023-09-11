@@ -1,81 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
 body {
-    font-weight: 400;
-    color: #000000;
-    background: #FFFFFF;
-}
-
-#header {
-    width: 100%;
-    padding: 20px;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-#main_name {
-    /* margin-top: 50px; */
-    font-weight: 600;
-    width: 70%;
-    /* margin-bottom: 10px; */
-    font-size: 20px;
-    text-align: left;
-    float: left;
-    height: 40px;
+h1 {
+    color: #333;
 }
 
-img {
-    width: 40px;
-    float: left;
-    height: 40px;
-    /* margin: 30px auto; */
-}
-
-p {
-    width: 350px;
-    margin: 0 auto;
-}
-
-button {
-    border: 0;
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    margin-top: 50px;
-    height: 60px;
-    width: 200px;
-    font-weight: 600;
     cursor: pointer;
-    transition: all 500ms ease;
-    color: var(--tg-theme-button-color);
-    background: #14BAAD;
-    font-size: 20px;
-}
-
-button:hover {
-    background: var(--tg-theme-secondary-bg-color);
-}
-
-#form {
-    display: none;
+    font-size: 16px;
     text-align: center;
-}
-
-input {
-    width: 90%;
-    outline: none;
-    margin: 10px 5px;
-    padding: 15px 10px;
-    font-size: 14px;
-    border: 2px solid silver;
-    border-radius: 5px;
-}
-  
-input:focus {
-  border-color: #db5d5d;
+    text-decoration: none;
 }
