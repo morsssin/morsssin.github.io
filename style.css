@@ -20,10 +20,7 @@ body {
 #header {
     display: block;
     width: 100%;
-    
     /* padding: 10px; */
-    
-    background-color: #4EA2EF;
     margin: 5px;
     
     /* padding-bottom: 10px; */
@@ -47,7 +44,7 @@ body {
 
 #header img {
     display: block;
-    width: 10%;
+    width: 80px;
     float: right;
     margin-left: 5px;
     /* margin-right: 5px; */
